@@ -1,8 +1,15 @@
 import time
-import msvcrt
+import platform
 
-
+if platform.system() == "Windows":
+  import msvcrt
+else:
+    print("Dieses Programm wird derzeit nur von Windows unterstützt")
+    exit()
 print("       *****Pulsmessung*****\n\n1. Beginne mit irgendeiner Taste und drücke jedesmal wenn du den Puls spürst nochmal auf diese Taste.\n2. Wenn du das Programm beenden möchtest, drücke \"Leertaste\"\n   Danach wir der Puls für 5 Sekunden angezeigt und das Programm beendet sich von alleine \n")
+
+eingabe = 0
+
 
 eingabe = msvcrt.getch().decode('ASCII')
 
