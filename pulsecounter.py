@@ -38,4 +38,4 @@ if eingabe != " ":
   print("Zeit: " + str(zeit) + " Sekunden")
   print("\n-->  Puls: " + str(puls))
 
-  time.sleep(500)
+  time.sleep(5)
